@@ -62,7 +62,6 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li class="active"><a href="tech.html">Technical Info</a></li>
-						<li><a href="next.html">Next Steps</a></li>
 						<li><a href="about.html">About Us</a></li>
 					</ul>
 				</div>
@@ -91,8 +90,7 @@
 			
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>How did we do it</h2>
-					<p>Description of information we gathered and from who.</p>
+				  <h2>How did we do it?</h2>
 				</div>
 			</div>
 
@@ -102,68 +100,48 @@
 					<ul class="gtco-tab-nav">
 						<li class="active"><a href="#" data-tab="1"><span class="icon visible-xs"><i class="icon-command"></i></span><span class="hidden-xs">Motion Model</span></a></li>
 						<li><a href="#" data-tab="2"><span class="icon visible-xs"><i class="icon-bar-graph"></i></span><span class="hidden-xs">Algorithm</span></a></li>
-						<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="icon-box"></i></span><span class="hidden-xs">Results</span></a></li>
+						<li><a href="#" data-tab="3"><span class="icon visible-xs"><i class="icon-box"></i></span><span class="hidden-xs">Prototype Next Steps</span></a></li>
 					</ul>
 
 					<!-- Tabs -->
 					<div class="gtco-tab-content-wrap">
 
 						<div class="gtco-tab-content tab-content active" data-tab-content="1">
-							<div class="col-md-6">
-								<div class="gtco-video gtco-bg" style="background-image: url(images/img_1.jpg); ">
-									<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video"></i></a>
-									<div class="overlay"></div>
+							<div class="col-md-6 col-lg-4">
+								<div class="gtco-video gtco-bg" style="background-image: url(images/phone_axis.png); width:300px;  ">
 								</div>
 							</div>
-							<div class="col-md-6">
+							<div class="col-md-6 col-lg-7">
 								<h2>Motion Model</h2>
-								<p>Quick Description of Motion Models...blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-
-								<div class="row">
-									<div class="col-md-6">
-										<h2 class="uppercase">Expectations of Data</h2>
-										<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-									</div>
-									<div class="col-md-6">
-										<h2 class="uppercase">Modification Made</h2>
-										<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-									</div>
-
-							</div>
+								<p>Our motion model is relatively simple. We are recording linear acceleration and angular velocity in all three axes while someone walks downstairs with a smartphone in their front pocket. We are measuring the oscillatory motion produced when walking down stairs. The magnitudes of the data is less important to us then the frequency of the changes in motion. For a given set of stairs the primary frequency is going to be half the step frequency; the accelerometer cycles with every other step because the smartphone is only on one leg. The secondary frequency is the one that is often more useful in characterizing the set of stairs. For instance, the external West hall stairwells have a turn every half floor, this large change in the vertical angular velocity vector every four-ish seconds appears as a powerful low frequency in the frequency domain of our sensor data.</p>
+								<p>We chose to collect data from the leg as it has motion through every axis when walking down stairs, unlike the torso which moves less. We made sure to walk consistently and smoothly so as to create data that was as easy to work with as possible.</p>
 						</div>
 						</div>
 						<div class="gtco-tab-content tab-content" data-tab-content="2">
 							<div class="col-md-6 col-md-push-6">
-								<div class="gtco-video gtco-bg" style="background-image: url(images/img_1.jpg); ">
-									<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video"></i></a>
-									<div class="overlay"></div>
+								<p align="center"><strong>Step One:</strong> Filtering</p>
+								<div class="gtco-video gtco-bg" style="background-image: url(images/NordAng.png); ">
 								</div>
+								
+								<br>
+								<p align="center"><strong>Step Two:</strong> Frequency Domain and Characterizing Frequency</p>
+								<div class="gtco-video gtco-bg" style="background-image: url(images/FFTPlot.png); ">
+								</div>
+								
 							</div>
 							<div class="col-md-6 col-md-pull-6">
 								<h2>Algorithm</h2>
-								<p>Quick Description of Algorithm...blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-
-								<div class="row">
-									<div class="col-md-6">
-										<h2 class="uppercase">Motion Model Dynamics</h2>
-										<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-									</div>
-									<div class="col-md-6">
-										<h2 class="uppercase">Fourier Analysis</h2>
-										<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-									</div>
-									<div class="col-md-6">
-										<h2 class="uppercase">Frequency Domain</h2>
-										<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-									</div>
-								</div>
+								<p>Our algorithm is relatively straightforward. It takes in trimmed acceleration and angular velocity data, each in three axes, and first applies a low-pass filter with a cutoff frequency of 2Hz. This filtering removes unwanted noise, and ensure that the peak frequencies in the frequency domain are the frequencies that come from the stepping motion and not vibrations produced by impact. Next each data vector is transformed into the frequency domain using the fft and fftshift functions in matlab. We then identify which frequency domain plots are characteristic of the motion. This step was done by hand but could be automated. Frequency domain plots that contain several peak frequencies at similar power levels allow for too much variation in peak frequency between data collections. However, each stairwell chosen has several frequency domain plots that have a very clear singular peak frequency that is easy to identify, these peak frequencies were chosen to be the characteristic frequencies of the location.</p>
+								<p>A similar process was used in order to identify the stairwell for a test data. The data was filtered and transformed into the frequency domain and the peak frequency was identified for each data axis. These peak frequencies were then compared to the characteristic frequencies of each stairwell and a vector distance was calculated. The lowest distance told us which stairwell our test data was collected at.</p>
 
 							</div>
 						</div>
 						<div class="gtco-tab-content tab-content" data-tab-content="3">
 							<div class="col-md-12">
-								<h2>Results</h2>
-								<p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+								<h2>In the Future</h2>
+								<p>Currently our proof of concept identifies a person’s relative location based on motion data from the 3-axis accelerometer and gyroscope from their smartphones when walking through a set of stairs. </p>
+								<p>At the moment, we were only able to capture data from a small sample size. In order to improve the quality of our project we would like to build a larger database. By doing so we would be able to reduce the noise and clear signal of our motion profiles.</p>
+								<p>We would also like to implement an Eigenvector Identification Algorithm that would allow us to more accurately identify motion profiles due to the fact that it would be a 2-Dimensional comparison (different characteristics like highest value and distances between peaks) rather than a 1-Dimensional (highest peak vs highest peak).</p>
 
 							</div>
 						</div>
